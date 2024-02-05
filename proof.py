@@ -3,7 +3,7 @@ import random
 import time
 import math
 
-(WIDTH, HEIGHT) = (800, 800)
+(WIDTH, HEIGHT) = (400, 400)
 scl = 10
 res = math.floor(WIDTH / scl)
 window = pygame.display.set_mode((WIDTH, HEIGHT))
