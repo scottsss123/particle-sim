@@ -11,6 +11,9 @@ int main()
     std::cout << "hello world\n";
 
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "particle-sim");
+    Element element(10, 10);
+
+    
     
     while (window.isOpen())
     {
@@ -21,13 +24,11 @@ int main()
                 window.close();
         }
 
-        window.clear(sf::Color::Black);
+        
+        window.draw(element.cell);
         window.display();
     }
 
     std::cout << "sfml success!\n";
-
-    Element element; 
-
     return 0;
 }
